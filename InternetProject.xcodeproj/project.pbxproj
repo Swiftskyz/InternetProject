@@ -12,6 +12,7 @@
 		757706CB21C401BC009A3356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757706CA21C401BC009A3356 /* Assets.xcassets */; };
 		757706CE21C401BC009A3356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757706CC21C401BC009A3356 /* LaunchScreen.storyboard */; };
 		757706D621C40673009A3356 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757706D521C40673009A3356 /* InternetDetailViewController.swift */; };
+		757706DE21C40C24009A3356 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757706DD21C40C24009A3356 /* InternetMasterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		757706CD21C401BC009A3356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		757706CF21C401BC009A3356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		757706D521C40673009A3356 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		757706DD21C40C24009A3356 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		757706C221C401BA009A3356 /* InternetProject */ = {
 			isa = PBXGroup;
 			children = (
-				757706C321C401BA009A3356 /* AppDelegate.swift */,
-				757706D521C40673009A3356 /* InternetDetailViewController.swift */,
-				757706C721C401BA009A3356 /* Main.storyboard */,
-				757706CA21C401BC009A3356 /* Assets.xcassets */,
-				757706CC21C401BC009A3356 /* LaunchScreen.storyboard */,
-				757706CF21C401BC009A3356 /* Info.plist */,
+				757706DA21C40BD8009A3356 /* Controller */,
+				757706DB21C40BDF009A3356 /* View */,
+				757706DC21C40BE4009A3356 /* Resources */,
 			);
 			path = InternetProject;
+			sourceTree = "<group>";
+		};
+		757706DA21C40BD8009A3356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				757706D521C40673009A3356 /* InternetDetailViewController.swift */,
+				757706DD21C40C24009A3356 /* InternetMasterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		757706DB21C40BDF009A3356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				757706C721C401BA009A3356 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		757706DC21C40BE4009A3356 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				757706C321C401BA009A3356 /* AppDelegate.swift */,
+				757706CC21C401BC009A3356 /* LaunchScreen.storyboard */,
+				757706CA21C401BC009A3356 /* Assets.xcassets */,
+				757706CF21C401BC009A3356 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				757706D621C40673009A3356 /* InternetDetailViewController.swift in Sources */,
+				757706DE21C40C24009A3356 /* InternetMasterViewController.swift in Sources */,
 				757706C421C401BA009A3356 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
