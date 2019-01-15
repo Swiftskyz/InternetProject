@@ -31,6 +31,7 @@ public class InternetMasterViewController: UITableViewController
             " ",
             " ",
             " ",
+            " ",
             " "
         ]
         
@@ -76,13 +77,18 @@ public class InternetMasterViewController: UITableViewController
         return addresses.count
     }
     
-    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        let rowText = InternetTopics[indexPath.row]
+        cell.textLabel!.text = rowText
         internetDetail?.detailAddress = addresses[indexPath.row]
         internetDetail?.detailTitle = InternetTopics[indexPath.row]
         if (internetDetail != nil)
         {
             splitViewController?.showDetailViewController(internetDetail!, sender: nil)
         }
+        return cell
     }
 }
